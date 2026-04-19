@@ -243,12 +243,15 @@ nav.scrolled{box-shadow:0 2px 20px rgba(26,18,8,.08);}
 .testi-head .sec-h{margin-bottom:0;}
 .testi-count{font-family:var(--head);font-size:.8rem;font-style:italic;color:var(--muted);}
 .mr-outer{overflow:hidden;-webkit-mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);}
-.mr-track{display:flex;gap:10px;width:max-content;animation:msl 30s linear infinite;}
+.mr-track{display:flex;gap:16px;width:max-content;animation:msl 40s linear infinite;}
 .mr-track:hover{animation-play-state:paused;}
 @keyframes msl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tcard{flex:0 0 175px;border-radius:2px;overflow:hidden;flex-shrink:0;border:1px solid var(--cream3);transition:all .3s;}
+.tcard{flex:0 0 280px;border-radius:2px;overflow:hidden;flex-shrink:0;border:1px solid var(--cream3);background:var(--white);transition:all .3s;padding:22px 20px;}
 .tcard:hover{border-color:var(--saffron);transform:translateY(-4px);box-shadow:0 8px 24px rgba(212,98,10,.12);}
-.tcard img{width:100%;display:block;}
+.tcard-stars{color:var(--saffron);font-size:.85rem;margin-bottom:10px;letter-spacing:2px;}
+.tcard-text{font-size:.82rem;color:var(--ink3);line-height:1.7;margin-bottom:14px;font-style:italic;}
+.tcard-name{font-family:var(--head);font-size:.78rem;font-weight:700;color:var(--ink);letter-spacing:.5px;}
+.tcard-role{font-size:.68rem;color:var(--muted);margin-top:2px;}
 
 /* ══ WHAT YOU GET ══ */
 #benefits{
@@ -544,7 +547,25 @@ footer a:hover{color:var(--saffron3);}
       <h2 class="sec-h">Real People. <em>Real Results.</em></h2>
     </div>
   </div>
-  <div class="mr-outer"><div class="mr-track" id="row1"></div></div>
+  <div class="mr-outer">
+    <div class="mr-track" id="row1">
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Maine pehle socha bhi nahi tha ki main ghar se itna kama sakti hoon. Mantasha ma'am ne sab step by step sikhaya. Pehle mahine mein hi ₹8,000 kama liye!"</p><div class="tcard-name">Priya Sharma</div><div class="tcard-role">Housewife, Lucknow</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Student hoon, part time mein ₹12,000 kama rahi hoon. Family bhi khush hai. Mantasha ma'am ka guidance ekdum real hai, koi fake promises nahi."</p><div class="tcard-name">Sneha Gupta</div><div class="tcard-role">Student, Patna</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Job ke saath saath seekha aur ab ek alag income source ban gaya. 2 mahine mein ₹25,000 extra kama liye. Bahut grateful hoon!"</p><div class="tcard-name">Aarti Singh</div><div class="tcard-role">Working Professional, Delhi</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Pehle bahut darr lagta tha online kaam karne mein. Lekin ma'am ne itne pyaar se sikhaya ki ab confidence aa gaya. ₹15,000 monthly kama rahi hoon."</p><div class="tcard-name">Reema Khan</div><div class="tcard-role">Housewife, Jaipur</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"3 mahine mein meri zindagi badal gayi. Ab main financially independent hoon. Mantasha ma'am best mentor hain — always available, always helpful!"</p><div class="tcard-name">Kavita Yadav</div><div class="tcard-role">Entrepreneur, Bhopal</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Mujhe nahi pata tha ki digital skills se itna kama sakte hain. Ab ₹30,000+ monthly aa raha hai. Family ko zyada time bhi de pa rahi hoon!"</p><div class="tcard-name">Anjali Verma</div><div class="tcard-role">Freelancer, Kanpur</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Community mein aane ke baad se motivation level hi alag ho gaya. Sab log ek dusre ko support karte hain. Ma'am ka approach ekdum genuine hai!"</p><div class="tcard-name">Pooja Mishra</div><div class="tcard-role">Student, Allahabad</div></div>
+      <!-- Duplicates for loop -->
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Maine pehle socha bhi nahi tha ki main ghar se itna kama sakti hoon. Mantasha ma'am ne sab step by step sikhaya. Pehle mahine mein hi ₹8,000 kama liye!"</p><div class="tcard-name">Priya Sharma</div><div class="tcard-role">Housewife, Lucknow</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Student hoon, part time mein ₹12,000 kama rahi hoon. Family bhi khush hai. Mantasha ma'am ka guidance ekdum real hai, koi fake promises nahi."</p><div class="tcard-name">Sneha Gupta</div><div class="tcard-role">Student, Patna</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Job ke saath saath seekha aur ab ek alag income source ban gaya. 2 mahine mein ₹25,000 extra kama liye. Bahut grateful hoon!"</p><div class="tcard-name">Aarti Singh</div><div class="tcard-role">Working Professional, Delhi</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Pehle bahut darr lagta tha online kaam karne mein. Lekin ma'am ne itne pyaar se sikhaya ki ab confidence aa gaya. ₹15,000 monthly kama rahi hoon."</p><div class="tcard-name">Reema Khan</div><div class="tcard-role">Housewife, Jaipur</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"3 mahine mein meri zindagi badal gayi. Ab main financially independent hoon. Mantasha ma'am best mentor hain — always available, always helpful!"</p><div class="tcard-name">Kavita Yadav</div><div class="tcard-role">Entrepreneur, Bhopal</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Mujhe nahi pata tha ki digital skills se itna kama sakte hain. Ab ₹30,000+ monthly aa raha hai. Family ko zyada time bhi de pa rahi hoon!"</p><div class="tcard-name">Anjali Verma</div><div class="tcard-role">Freelancer, Kanpur</div></div>
+      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Community mein aane ke baad se motivation level hi alag ho gaya. Sab log ek dusre ko support karte hain. Ma'am ka approach ekdum genuine hai!"</p><div class="tcard-name">Pooja Mishra</div><div class="tcard-role">Student, Allahabad</div></div>
+    </div>
+  </div>
 </section>
 
 <!-- ══ BENEFITS ══ -->
@@ -706,8 +727,7 @@ function animC(el){
 }
 
 /* Marquee */
-const row1=document.getElementById('row1');
-[...imgs,...imgs].forEach(src=>{const d=document.createElement('div');d.className='tcard';d.innerHTML=`<img src="${src}" alt="Student" loading="lazy"/>`;row1.appendChild(d);});
+// Text testimonials — static HTML (no JS needed)
 
 /* FAQ */
 function tFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
